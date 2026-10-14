@@ -1,0 +1,7 @@
+title: "INF01086 2026/2 - Processador Neander"
+description: "Projeto Final de Arquitetura e Organização de Computadores I (INF01086) - Instituto de Informática UFRGS"
+theme: jekyll-theme-cayman
+show_downloads: true
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
