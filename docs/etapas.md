@@ -25,9 +25,8 @@ O módulo decodifica o código de operação de 4 bits `ri[3:0]` (correspondente
   - `ri[3:0]`: Nibble superior da instrução.
 - **Saídas (1 bit cada)**:
   - `nop`, `sta`, `lda`, `add`, `or_op`, `and_op`, `not_op`, `jmp`, `jn`, `jz`, `hlt`.
-- **Implementação**:
-  - Bloco combinacional `always @(*)` com instrução `case (ri)`.
-  - Garantia de inicialização em zero de todas as saídas no início do bloco para evitar a síntese de latches indesejados.
+- **Implementação Estrutural**:
+  - Descrição puramente estrutural através de equações booleanas dos mintermos ($m_0 \dots m_{15}$) com portas lógicas AND/NOT, eliminando qualquer descrição comportamental algorítmica.
 
 ---
 
@@ -55,27 +54,21 @@ Converte os sinais de instrução aritmética/lógica do Neander nas linhas de c
 Compreende três submódulos integrados:
 
 ### 1. Unidade Lógica e Aritmética (`ula_neander.v`)
-- **Entradas**:
-  - `X[7:0]`: Operando vindo do Acumulador (AC).
-  - `Y[7:0]`: Operando vindo da Memória (RDM / Chaves na bancada).
-  - `selUAL[2:0]`: Código da operação da ULA.
-- **Saídas**:
-  - `saida[7:0]`: Resultado da operação de 8 bits.
-  - `flag_n`: Flag de resultado negativo ($saida[7]$).
-  - `flag_z`: Flag de resultado zero ($saida == 8'b0$).
-- **Detecção das Flags**:
-  - Cálculo simultâneo com atribuição contínua (`assign flag_n = saida[7]; assign flag_z = (saida == 8'h00);`).
+- **Implementação Estrutural**:
+  - Instancia o somador Ripple Carry de 8 bits [`somador8.v`](../somador8.v) encadeando 8 módulos [`full_adder.v`](../full_adder.v).
+  - Executa as operações aritméticas de soma ($X + Y$) e negação em complemento de 2 ($-X = \sim X + 1$).
+  - As operações lógicas (AND, OR, NOT) são geradas em paralelo por vias estruturais.
+  - O resultado final é roteado através do multiplexador estrutural [`mux8_8to1.v`](../mux8_8to1.v) controlado pelo barramento `selUAL[2:0]`.
+  - Flags de status $N = out[7]$ e $Z = \sim(|out)$ derivadas estruturalmente.
 
 ### 2. Conversor Binário para 7 Segmentos (`hex_to_7seg.v`)
-- **Entrada**: `hex[3:0]` (dígito hexadecimal de 0 a F).
-- **Saída**: `seg[6:0]` (segmentos de `a` até `g`, catodos/anodos ativos em nível `0`).
-- **Padrão Altera DE0**: Displays de anodo comum onde `0` liga o segmento e `1` desliga.
+- **Implementação Estrutural**:
+  - Implementado integralmente através das equações booleanas minimizadas de cada segmento ($a, b, c, d, e, f, g$) via Mapas de Karnaugh para anodo comum (ativo baixo).
 
 ### 3. Integração ULA e Displays (`etapa3_ula_display.v`)
-- Conecta a ULA a dois conversores de 7 segmentos:
-  - `disp_high`: Converte `saida[7:4]` para `hex1`.
-  - `disp_low`: Converte `saida[3:0]` para `hex0`.
-- Exporta o resultado nos displays e as flags em LEDs para observação imediata.
+- Conecta a ULA estrutural aos dois decodificadores de 7 segmentos:
+  - `dec_hex1`: Exibe `out[7:4]` em `HEX1`.
+  - `dec_hex0`: Exibe `out[3:0]` em `HEX0`.
 
 ---
 
@@ -84,6 +77,10 @@ Compreende três submódulos integrados:
 Compreende o subsistema de sequenciamento e controle de passo:
 
 ### 1. Contador de Programa de 8 bits (`pc_neander.v`)
+- **Implementação Estrutural**:
+  - Instancia um somador [`somador8.v`](../somador8.v) configurado como incrementador ($PC + 1$).
+  - Instancia o módulo sequencial [`registrador8b.v`](../registrador8b.v) com carga síncrona e reset assíncrono.
+  - Multiplexador estrutural seleciona entre manter o valor atual, carregar novo endereço de salto (`cargaPC`) ou avançar (`incrementaPC`).
 - **Entradas**:
   - `clk`: Sinal de relógio de disparo.
   - `reset`: Reset assíncrono (ativo alto).

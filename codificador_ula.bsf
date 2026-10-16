@@ -40,15 +40,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "ula_and" (rect 0 0 30 12)(font "Arial" ))
-		(text "ula_and" (rect 21 59 51 71)(font "Arial" ))
+		(text "ula_or" (rect 0 0 24 12)(font "Arial" ))
+		(text "ula_or" (rect 21 59 45 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "ula_or" (rect 0 0 24 12)(font "Arial" ))
-		(text "ula_or" (rect 21 75 45 87)(font "Arial" ))
+		(text "ula_and" (rect 0 0 30 12)(font "Arial" ))
+		(text "ula_and" (rect 21 75 51 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port

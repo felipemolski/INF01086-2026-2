@@ -1,31 +1,63 @@
-// Decodificador de hexadecimal para display de 7 segmentos (ativo baixo)
-// seg: {g, f, e, d, c, b, a}
+// Decodificador Hexadecimal para Display de 7 Segmentos - Descricao Estrutural
+// Segmentos ativos em nivel baixo (anodo comum da placa Altera DE0)
+// Equacoes booleanas minimizadas via Mapas de Karnaugh
 
 module hex_to_7seg (
     input  wire [3:0] hex_digit,
-    output reg  [6:0] seg
+    output wire [6:0] seg
 );
 
-    always @(*) begin
-        case (hex_digit)
-            4'h0: seg = 7'b1000000;
-            4'h1: seg = 7'b1111001;
-            4'h2: seg = 7'b0100100;
-            4'h3: seg = 7'b0110000;
-            4'h4: seg = 7'b0011001;
-            4'h5: seg = 7'b0010010;
-            4'h6: seg = 7'b0000010;
-            4'h7: seg = 7'b1111000;
-            4'h8: seg = 7'b0000000;
-            4'h9: seg = 7'b0010000;
-            4'hA: seg = 7'b0001000;
-            4'hB: seg = 7'b0000011;
-            4'hC: seg = 7'b1000110;
-            4'hD: seg = 7'b0100001;
-            4'hE: seg = 7'b0000110;
-            4'hF: seg = 7'b0001110;
-            default: seg = 7'b1111111;
-        endcase
-    end
+    wire A = hex_digit[3];
+    wire B = hex_digit[2];
+    wire C = hex_digit[1];
+    wire D = hex_digit[0];
+
+    wire nA = ~A;
+    wire nB = ~B;
+    wire nC = ~C;
+    wire nD = ~D;
+
+    // Segmento a
+    assign seg[0] = (nA & nB & nC &  D) | 
+                    (nA &  B & nC & nD) | 
+                    ( A &  B & nC &  D) | 
+                    ( A & nB &  C &  D);
+
+    // Segmento b
+    assign seg[1] = (nA &  B & nC &  D) | 
+                    (nA &  B &  C & nD) | 
+                    ( A & nB &  C &  D) | 
+                    ( A &  B & nC & nD) | 
+                    ( A &  B &  C & nD) | 
+                    ( A &  B &  C &  D);
+
+    // Segmento c
+    assign seg[2] = (nA & nB &  C & nD) | 
+                    ( A &  B & nC & nD) | 
+                    ( A &  B &  C & nD) | 
+                    ( A &  B &  C &  D);
+
+    // Segmento d
+    assign seg[3] = (nA & nB & nC &  D) | 
+                    (nA &  B & nC & nD) | 
+                    (nA &  B &  C &  D) | 
+                    ( A & nB &  C & nD) | 
+                    ( A &  B &  C &  D);
+
+    // Segmento e
+    assign seg[4] = (nA &  D) | 
+                    (nA &  B & nC) | 
+                    (nB & nC &  D);
+
+    // Segmento f
+    assign seg[5] = (nA & nB &  D) | 
+                    (nA & nB &  C) | 
+                    (nA &  C &  D) | 
+                    ( A &  B & nC &  D);
+
+    // Segmento g
+    assign seg[6] = (nA & nB & nC) | 
+                    (nA &  B &  C &  D) | 
+                    ( A &  B & nC & nD);
 
 endmodule

@@ -1,5 +1,5 @@
 Fitter report for ProjetoFinal
-Fri Oct 16 08:56:44 2026
+Fri Oct 16 09:44:13 2026
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -65,15 +65,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 16 08:56:44 2026           ;
+; Fitter Status                      ; Successful - Fri Oct 16 09:44:13 2026           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; ProjetoFinal                                    ;
 ; Top-level Entity Name              ; ProjetoFinal                                    ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C16F484C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 119 / 15,408 ( < 1 % )                          ;
-;     Total combinational functions  ; 117 / 15,408 ( < 1 % )                          ;
+; Total logic elements               ; 112 / 15,408 ( < 1 % )                          ;
+;     Total combinational functions  ; 110 / 15,408 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 45 / 15,408 ( < 1 % )                           ;
 ; Total registers                    ; 45                                              ;
 ; Total pins                         ; 52 / 347 ( 15 % )                               ;
@@ -161,8 +161,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 279 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 279 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 272 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 272 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -185,7 +185,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 269     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 262     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -201,26 +201,26 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 119 / 15,408 ( < 1 % ) ;
-;     -- Combinational with no register       ; 74                     ;
+; Total logic elements                        ; 112 / 15,408 ( < 1 % ) ;
+;     -- Combinational with no register       ; 67                     ;
 ;     -- Register only                        ; 2                      ;
 ;     -- Combinational with a register        ; 43                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
 ;     -- 4 input functions                    ; 53                     ;
 ;     -- 3 input functions                    ; 14                     ;
-;     -- <=2 input functions                  ; 50                     ;
+;     -- <=2 input functions                  ; 43                     ;
 ;     -- Register only                        ; 2                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 75                     ;
-;     -- arithmetic mode                      ; 42                     ;
+;     -- normal mode                          ; 79                     ;
+;     -- arithmetic mode                      ; 31                     ;
 ;                                             ;                        ;
 ; Total registers*                            ; 45 / 17,068 ( < 1 % )  ;
 ;     -- Dedicated logic registers            ; 45 / 15,408 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,660 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 9 / 963 ( < 1 % )      ;
+; Total LABs:  partially or completely used   ; 10 / 963 ( 1 % )       ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 52 / 347 ( 15 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
@@ -238,11 +238,11 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 0% / 1% / 0%           ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%           ;
 ; Maximum fan-out                             ; 45                     ;
 ; Highest non-global fan-out                  ; 45                     ;
 ; Total fan-out                               ; 621                    ;
-; Average fan-out                             ; 2.23                   ;
+; Average fan-out                             ; 2.27                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -255,25 +255,25 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 119 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
-;     -- Combinational with no register       ; 74                    ; 0                              ;
+; Total logic elements                        ; 112 / 15408 ( < 1 % ) ; 0 / 15408 ( 0 % )              ;
+;     -- Combinational with no register       ; 67                    ; 0                              ;
 ;     -- Register only                        ; 2                     ; 0                              ;
 ;     -- Combinational with a register        ; 43                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
 ;     -- 4 input functions                    ; 53                    ; 0                              ;
 ;     -- 3 input functions                    ; 14                    ; 0                              ;
-;     -- <=2 input functions                  ; 50                    ; 0                              ;
+;     -- <=2 input functions                  ; 43                    ; 0                              ;
 ;     -- Register only                        ; 2                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 75                    ; 0                              ;
-;     -- arithmetic mode                      ; 42                    ; 0                              ;
+;     -- normal mode                          ; 79                    ; 0                              ;
+;     -- arithmetic mode                      ; 31                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 45                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 45 / 15408 ( < 1 % )  ; 0 / 15408 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 9 / 963 ( < 1 % )     ; 0 / 963 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 10 / 963 ( 1 % )      ; 0 / 963 ( 0 % )                ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 52                    ; 0                              ;
@@ -290,7 +290,7 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
 ;     -- Total Connections                    ; 616                   ; 5                              ;
-;     -- Registered Connections               ; 137                   ; 0                              ;
+;     -- Registered Connections               ; 153                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -326,16 +326,16 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 ; BUTTON[1] ; G3    ; 1        ; 0            ; 23           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; BUTTON[2] ; F1    ; 1        ; 0            ; 23           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; CLOCK_50  ; G21   ; 6        ; 41           ; 15           ; 0            ; 37                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[0]     ; J6    ; 1        ; 0            ; 24           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[1]     ; H5    ; 1        ; 0            ; 27           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[2]     ; H6    ; 1        ; 0            ; 25           ; 21           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[0]     ; J6    ; 1        ; 0            ; 24           ; 0            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[1]     ; H5    ; 1        ; 0            ; 27           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[2]     ; H6    ; 1        ; 0            ; 25           ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; SW[3]     ; G4    ; 1        ; 0            ; 23           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[4]     ; G5    ; 1        ; 0            ; 27           ; 21           ; 9                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[5]     ; J7    ; 1        ; 0            ; 22           ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[6]     ; H7    ; 1        ; 0            ; 25           ; 14           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[7]     ; E3    ; 1        ; 0            ; 26           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[4]     ; G5    ; 1        ; 0            ; 27           ; 21           ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[5]     ; J7    ; 1        ; 0            ; 22           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[6]     ; H7    ; 1        ; 0            ; 25           ; 14           ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[7]     ; E3    ; 1        ; 0            ; 26           ; 7            ; 8                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; SW[8]     ; E4    ; 1        ; 0            ; 26           ; 0            ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; SW[9]     ; D2    ; 1        ; 0            ; 25           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; SW[9]     ; D2    ; 1        ; 0            ; 25           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -929,25 +929,35 @@ The pin-out file can be found in D:/Projeto Final/output_files/ProjetoFinal.pin.
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                           ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                      ; Library Name ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+--------------+
-; |ProjetoFinal                         ; 119 (1)     ; 45 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 52   ; 0            ; 74 (1)       ; 2 (0)             ; 43 (0)           ; |ProjetoFinal                                                            ; work         ;
-;    |codificador_ula:cod_ula_inst|     ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|codificador_ula:cod_ula_inst                               ; work         ;
-;    |decoder_neander:decoder_inst|     ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|decoder_neander:decoder_inst                               ; work         ;
-;    |etapa3_ula_display:ula_disp_inst| ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (0)       ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst                           ; work         ;
-;       |hex_to_7seg:dec_hex0|          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0      ; work         ;
-;       |hex_to_7seg:dec_hex1|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex1      ; work         ;
-;       |ula_neander:ula_inst|          ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst      ; work         ;
-;    |etapa4_pc_divisor:pc_disp_inst|   ; 81 (0)      ; 45 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 36 (0)       ; 2 (0)             ; 43 (0)           ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst                             ; work         ;
-;       |clock_divider:div_inst|        ; 44 (44)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 33 (33)          ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst      ; work         ;
-;       |hex_to_7seg:dec_hex2|          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2        ; work         ;
-;       |hex_to_7seg:dec_hex3|          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3        ; work         ;
-;       |pc_neander:pc_inst|            ; 18 (18)     ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 8 (8)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst          ; work         ;
-;       |run_step_ctrl:run_step_inst|   ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 2 (2)             ; 2 (2)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst ; work         ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+--------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                          ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                     ; Library Name ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------------+--------------+
+; |ProjetoFinal                         ; 112 (1)     ; 45 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 52   ; 0            ; 67 (1)       ; 2 (0)             ; 43 (0)           ; |ProjetoFinal                                                                                           ; work         ;
+;    |codificador_ula:cod_ula_inst|     ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|codificador_ula:cod_ula_inst                                                              ; work         ;
+;    |decoder_neander:decoder_inst|     ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|decoder_neander:decoder_inst                                                              ; work         ;
+;    |etapa3_ula_display:ula_disp_inst| ; 24 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (0)       ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst                                                          ; work         ;
+;       |hex_to_7seg:dec_hex0|          ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0                                     ; work         ;
+;       |hex_to_7seg:dec_hex1|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex1                                     ; work         ;
+;       |ula_neander:ula_inst|          ; 15 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (1)       ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst                                     ; work         ;
+;          |mux8_8to1:mux_operacoes|    ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes             ; work         ;
+;          |somador8:somador_add|       ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add                ; work         ;
+;             |full_adder:fa2|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2 ; work         ;
+;    |etapa4_pc_divisor:pc_disp_inst|   ; 80 (0)      ; 45 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (0)       ; 2 (0)             ; 43 (0)           ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst                                                            ; work         ;
+;       |clock_divider:div_inst|        ; 45 (45)     ; 33 (33)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 33 (33)          ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst                                     ; work         ;
+;       |hex_to_7seg:dec_hex2|          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2                                       ; work         ;
+;       |hex_to_7seg:dec_hex3|          ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3                                       ; work         ;
+;       |pc_neander:pc_inst|            ; 16 (1)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (1)        ; 0 (0)             ; 8 (3)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst                                         ; work         ;
+;          |registrador8b:reg_inst|     ; 9 (9)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 8 (8)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst                  ; work         ;
+;          |somador8:inc_inst|          ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst                       ; work         ;
+;             |full_adder:fa1|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa1        ; work         ;
+;             |full_adder:fa2|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa2        ; work         ;
+;             |full_adder:fa3|          ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa3        ; work         ;
+;             |full_adder:fa4|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa4        ; work         ;
+;             |full_adder:fa5|          ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa5        ; work         ;
+;       |run_step_ctrl:run_step_inst|   ; 5 (5)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 2 (2)             ; 2 (2)            ; |ProjetoFinal|etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst                                ; work         ;
++---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -994,16 +1004,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX3[4]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX3[5]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; HEX3[6]   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; SW[2]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[4]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[5]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[6]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[5]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[4]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[7]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[3]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[0]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[9]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[8]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[1]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[1]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[0]     ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[2]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[8]     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; BUTTON[0] ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; BUTTON[2] ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; CLOCK_50  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
@@ -1011,375 +1021,362 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                ;
-+---------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                             ; Pad To Core Index ; Setting ;
-+---------------------------------------------------------------------------------+-------------------+---------+
-; SW[2]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~4             ; 0                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[1]~8                                 ; 0                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~4             ; 0                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~0             ; 0                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~1             ; 0                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[2]~10                                ; 0                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[1]~12                                ; 0                 ; 6       ;
-; SW[4]                                                                           ;                   ;         ;
-;      - decoder_neander:decoder_inst|Equal3~0                                    ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[2]~9                                 ; 1                 ; 6       ;
-;      - cmd_ula_and                                                              ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal2~0                                    ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal10~0                                   ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal7~0                                    ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~0               ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[0]~11                                ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~7             ; 1                 ; 6       ;
-; SW[5]                                                                           ;                   ;         ;
-;      - decoder_neander:decoder_inst|Equal3~0                                    ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[2]~9                                 ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal4~0                                    ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal2~0                                    ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal10~0                                   ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal7~0                                    ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~0               ; 1                 ; 6       ;
-; SW[6]                                                                           ;                   ;         ;
-;      - decoder_neander:decoder_inst|Equal3~0                                    ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[2]~9                                 ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal4~0                                    ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal2~0                                    ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal10~0                                   ; 1                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal7~0                                    ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~0               ; 1                 ; 6       ;
-; SW[7]                                                                           ;                   ;         ;
-;      - decoder_neander:decoder_inst|Equal3~0                                    ; 0                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[2]~9                                 ; 0                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal4~0                                    ; 0                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal2~0                                    ; 0                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal10~0                                   ; 0                 ; 6       ;
-;      - decoder_neander:decoder_inst|Equal7~0                                    ; 0                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~0               ; 0                 ; 6       ;
-; SW[3]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~6             ; 1                 ; 6       ;
-;      - cmd_ula_and                                                              ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~4             ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~5             ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[0]~11                                ; 1                 ; 6       ;
-;      - codificador_ula:cod_ula_inst|selUAL[1]~12                                ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~7             ; 1                 ; 6       ;
-; SW[0]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~0             ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux7~0             ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective ; 1                 ; 6       ;
-; SW[9]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~6             ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~6             ; 1                 ; 6       ;
-; SW[8]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~4             ; 0                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~1             ; 0                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~2             ; 0                 ; 6       ;
-; SW[1]                                                                           ;                   ;         ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~2             ; 1                 ; 6       ;
-;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux6~1             ; 1                 ; 6       ;
-; BUTTON[0]                                                                       ;                   ;         ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out            ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg  ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[0]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[1]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[2]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[3]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[4]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[5]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[6]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[7]              ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]         ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]        ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync2    ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync1    ; 1                 ; 6       ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0    ; 1                 ; 6       ;
-; BUTTON[2]                                                                       ;                   ;         ;
-;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[3]~2            ; 0                 ; 6       ;
-; CLOCK_50                                                                        ;                   ;         ;
-; BUTTON[1]                                                                       ;                   ;         ;
-;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0~0  ; 1                 ; 6       ;
-+---------------------------------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                                        ;
++---------------------------------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                                                     ; Pad To Core Index ; Setting ;
++---------------------------------------------------------------------------------------------------------+-------------------+---------+
+; SW[6]                                                                                                   ;                   ;         ;
+;      - decoder_neander:decoder_inst|not_op~0                                                            ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~0           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~2           ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|and_op                                                              ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|lda~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|hlt~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|jmp~0                                                               ; 1                 ; 6       ;
+;      - carga_pc_cmd~0                                                                                   ; 1                 ; 6       ;
+; SW[5]                                                                                                   ;                   ;         ;
+;      - decoder_neander:decoder_inst|not_op~0                                                            ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~0           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~2           ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|and_op                                                              ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|lda~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|hlt~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|jmp~0                                                               ; 1                 ; 6       ;
+;      - carga_pc_cmd~0                                                                                   ; 1                 ; 6       ;
+; SW[4]                                                                                                   ;                   ;         ;
+;      - decoder_neander:decoder_inst|not_op~0                                                            ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~2           ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|and_op                                                              ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|lda~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|hlt~0                                                               ; 1                 ; 6       ;
+;      - decoder_neander:decoder_inst|jmp~0                                                               ; 1                 ; 6       ;
+;      - carga_pc_cmd~0                                                                                   ; 1                 ; 6       ;
+; SW[7]                                                                                                   ;                   ;         ;
+;      - decoder_neander:decoder_inst|not_op~0                                                            ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~0           ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~2           ; 0                 ; 6       ;
+;      - decoder_neander:decoder_inst|and_op                                                              ; 0                 ; 6       ;
+;      - decoder_neander:decoder_inst|lda~0                                                               ; 0                 ; 6       ;
+;      - decoder_neander:decoder_inst|hlt~0                                                               ; 0                 ; 6       ;
+;      - decoder_neander:decoder_inst|jmp~0                                                               ; 0                 ; 6       ;
+;      - carga_pc_cmd~0                                                                                   ; 0                 ; 6       ;
+; SW[3]                                                                                                   ;                   ;         ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[4]~4                  ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~0           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[0]~4           ; 1                 ; 6       ;
+;      - codificador_ula:cod_ula_inst|selUAL[0]~1                                                         ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~8           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~11          ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~12          ; 1                 ; 6       ;
+; SW[9]                                                                                                   ;                   ;         ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~3           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~10          ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~11          ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~12          ; 1                 ; 6       ;
+; SW[1]                                                                                                   ;                   ;         ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2|cout~0 ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~6           ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~9           ; 0                 ; 6       ;
+; SW[0]                                                                                                   ;                   ;         ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2|cout~0 ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~5           ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~6           ; 0                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~9           ; 0                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective                         ; 0                 ; 6       ;
+; SW[2]                                                                                                   ;                   ;         ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2|cout~0 ; 1                 ; 6       ;
+;      - codificador_ula:cod_ula_inst|selUAL[0]~0                                                         ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[0]~4           ; 1                 ; 6       ;
+;      - codificador_ula:cod_ula_inst|selUAL[0]~1                                                         ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~7           ; 1                 ; 6       ;
+; SW[8]                                                                                                   ;                   ;         ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2|cout~0 ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~6           ; 1                 ; 6       ;
+;      - etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~8           ; 1                 ; 6       ;
+; BUTTON[0]                                                                                               ;                   ;         ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out                                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg                          ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[5]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[6]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[7]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]                                 ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]                                ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[0]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[1]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[3]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[2]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[4]                    ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync2                            ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync1                            ; 1                 ; 6       ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0                            ; 1                 ; 6       ;
+; BUTTON[2]                                                                                               ;                   ;         ;
+;      - etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_load_en~0                                   ; 0                 ; 6       ;
+; CLOCK_50                                                                                                ;                   ;         ;
+; BUTTON[1]                                                                                               ;                   ;         ;
+;      - etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0~0                          ; 1                 ; 6       ;
++---------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                       ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                     ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; BUTTON[0]                                                                ; PIN_H2             ; 45      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; CLOCK_50                                                                 ; PIN_G21            ; 37      ; Clock        ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~8        ; LCCOMB_X22_Y13_N16 ; 32      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[3]~2            ; LCCOMB_X31_Y27_N6  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective ; LCCOMB_X22_Y13_N14 ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                      ;
++--------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; BUTTON[0]                                                                ; PIN_H2            ; 45      ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; CLOCK_50                                                                 ; PIN_G21           ; 37      ; Clock        ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; carga_pc_cmd~0                                                           ; LCCOMB_X1_Y26_N24 ; 9       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~11       ; LCCOMB_X2_Y14_N30 ; 33      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_load_en~0           ; LCCOMB_X1_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective ; LCCOMB_X2_Y14_N26 ; 8       ; Clock        ; yes    ; Global Clock         ; GCLK15           ; --                        ;
++--------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                                                                                                          ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; Name                                                                     ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; CLOCK_50                                                                 ; PIN_G21            ; 37      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective ; LCCOMB_X22_Y13_N14 ; 8       ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
-+--------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                                                                                         ;
++--------------------------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name                                                                     ; Location          ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLOCK_50                                                                 ; PIN_G21           ; 37      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective ; LCCOMB_X2_Y14_N26 ; 8       ; 0                                    ; Global Clock         ; GCLK15           ; --                        ;
++--------------------------------------------------------------------------+-------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                     ;
-+---------------------------------------------------------------------------+---------+
-; Name                                                                      ; Fan-Out ;
-+---------------------------------------------------------------------------+---------+
-; BUTTON[0]~input                                                           ; 45      ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~8         ; 32      ;
-; codificador_ula:cod_ula_inst|selUAL[2]~10                                 ; 11      ;
-; SW[4]~input                                                               ; 9       ;
-; codificador_ula:cod_ula_inst|selUAL[1]~12                                 ; 9       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux6~1              ; 9       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~2              ; 9       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~6              ; 9       ;
-; codificador_ula:cod_ula_inst|selUAL[0]~11                                 ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[3]~2             ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~0                ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[7]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[6]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[5]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[4]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[3]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[2]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[1]               ; 8       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out[0]               ; 8       ;
-; SW[3]~input                                                               ; 7       ;
-; SW[7]~input                                                               ; 7       ;
-; SW[6]~input                                                               ; 7       ;
-; SW[5]~input                                                               ; 7       ;
-; SW[2]~input                                                               ; 7       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux7~1              ; 7       ;
-; decoder_neander:decoder_inst|Equal4~0                                     ; 4       ;
-; decoder_neander:decoder_inst|Equal3~0                                     ; 4       ;
-; SW[8]~input                                                               ; 3       ;
-; SW[0]~input                                                               ; 3       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex1|Decoder0~0          ; 3       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux3~0              ; 3       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux7~0              ; 3       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]         ; 3       ;
-; SW[1]~input                                                               ; 2       ;
-; SW[9]~input                                                               ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~10        ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~7         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~6         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync1     ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out             ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg   ; 2       ;
-; decoder_neander:decoder_inst|Equal10~0                                    ; 2       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~4              ; 2       ;
-; codificador_ula:cod_ula_inst|selUAL[2]~9                                  ; 2       ;
-; codificador_ula:cod_ula_inst|selUAL[1]~8                                  ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]          ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]         ; 2       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]         ; 2       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~8              ; 2       ;
-; BUTTON[1]~input                                                           ; 1       ;
-; BUTTON[2]~input                                                           ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0~0   ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~9         ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~7              ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0     ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out~0           ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~5         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~4         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~3         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~2         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~1         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~0         ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg~0 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync2     ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~9                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~8                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~7                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~6                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~5                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~4                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~3                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_out~1                ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr0~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr1~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr2~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr3~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr4~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr5~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|WideOr6~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr0~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr1~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr2~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr3~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr4~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr5~0             ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|WideOr6~0             ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr0~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr1~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr2~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr3~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr4~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr5~0           ; 1       ;
-; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|WideOr6~0           ; 1       ;
-; decoder_neander:decoder_inst|Equal7~0                                     ; 1       ;
-; decoder_neander:decoder_inst|Equal2~0                                     ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Equal0~1            ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux6~0              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Equal0~0            ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~1              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux5~0              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Mux4~5              ; 1       ;
-; cmd_ula_and                                                               ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]~94      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]~93      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]~92      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]~91      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]~90      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]~89      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]~88      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]~87      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]~86      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]~85      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]~84      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]~83      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]~82      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]~81      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]~80      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]~79      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]~78      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]~77      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]~76      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]~75      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]~74      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]~73      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]~72      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]~71      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]~70      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]~69      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]~68      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]~67      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]~66      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]~65      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]~64      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]~63      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]~62      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]~61      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]~60      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]~59      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]~58      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]~57      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]~56      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]~55      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]~54      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]~53      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]~52      ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]~51       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]~50       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]~49       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]~48       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]~47       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]~46       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]~45       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]~44       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]~43       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]~42       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]~41       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]~40       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]~39       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]~38       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]~37       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]~36       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]~35       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]~34       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]~33       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]~32       ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~14                 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~13                 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~12                 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~11                 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~10                 ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~9                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~8                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~7                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~6                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~5                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~4                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~3                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~2                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~1                  ; 1       ;
-; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|Add0~0                  ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~7              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~6              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~5              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~4              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~3              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~2              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~1              ; 1       ;
-; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|Add0~0              ; 1       ;
-+---------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                            ;
++--------------------------------------------------------------------------------------------------+---------+
+; Name                                                                                             ; Fan-Out ;
++--------------------------------------------------------------------------------------------------+---------+
+; BUTTON[0]~input                                                                                  ; 45      ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~11                               ; 33      ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[0]                    ; 12      ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[1]                    ; 11      ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[4]                    ; 10      ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[2]                    ; 10      ;
+; carga_pc_cmd~0                                                                                   ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[5]                    ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[6]                    ; 9       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~0           ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[3]                    ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[3]~2                  ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[1]~1                  ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[2]~3                  ; 9       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[0]~0                  ; 9       ;
+; SW[7]~input                                                                                      ; 8       ;
+; SW[5]~input                                                                                      ; 8       ;
+; SW[6]~input                                                                                      ; 8       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_load_en~0                                   ; 8       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[7]                    ; 8       ;
+; decoder_neander:decoder_inst|not_op~0                                                            ; 8       ;
+; SW[3]~input                                                                                      ; 7       ;
+; SW[4]~input                                                                                      ; 7       ;
+; SW[2]~input                                                                                      ; 5       ;
+; SW[0]~input                                                                                      ; 5       ;
+; codificador_ula:cod_ula_inst|selUAL[0]~1                                                         ; 5       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~1           ; 5       ;
+; SW[9]~input                                                                                      ; 4       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~2           ; 4       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]                                ; 4       ;
+; SW[8]~input                                                                                      ; 3       ;
+; SW[1]~input                                                                                      ; 3       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa3|cout~0        ; 3       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex1|seg~0                                      ; 3       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]                                ; 3       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[4]~4                  ; 3       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync1                            ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa5|cout~0        ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out                                    ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg                          ; 2       ;
+; decoder_neander:decoder_inst|hlt~0                                                               ; 2       ;
+; decoder_neander:decoder_inst|and_op                                                              ; 2       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~3           ; 2       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|somador8:somador_add|full_adder:fa2|cout~0 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]                                 ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]                                ; 2       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]                                ; 2       ;
+; BUTTON[1]~input                                                                                  ; 1       ;
+; BUTTON[2]~input                                                                                  ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|registrador8b:reg_inst|q[0]~_wirecell          ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0~0                          ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync0                            ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|clk_out~0                                  ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~10                               ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~9                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~8                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~7                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~6                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~5                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~4                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~3                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~2                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~1                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|LessThan0~0                                ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_clk_reg~0                        ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|step_sync2                            ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_next[5]~2                                   ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_next[6]~1                                   ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|pc_next[7]~0                                   ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa4|s             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa1|s             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa2|s             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|pc_neander:pc_inst|somador8:inc_inst|full_adder:fa3|s             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|run_step_ctrl:run_step_inst|clk_effective                         ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[6]~6                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[5]~5                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[4]~4                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[3]~3                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[2]~2                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[1]~1                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex3|seg[0]~0                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[6]~6                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[5]~5                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[4]~4                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[3]~3                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[2]~2                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[1]~1                                     ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|hex_to_7seg:dec_hex2|seg[0]~0                                     ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[6]~7                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[5]~6                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[4]~5                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[3]~4                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[2]~3                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[1]~2                                   ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg[0]~1                                   ; 1       ;
+; decoder_neander:decoder_inst|jmp~0                                                               ; 1       ;
+; decoder_neander:decoder_inst|lda~0                                                               ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|WideOr0~0                                  ; 1       ;
+; etapa3_ula_display:ula_disp_inst|hex_to_7seg:dec_hex0|seg~0                                      ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~12          ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~11          ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[3]~10          ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~9           ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~8           ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~7           ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[2]~6           ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[7]~5           ; 1       ;
+; etapa3_ula_display:ula_disp_inst|ula_neander:ula_inst|mux8_8to1:mux_operacoes|out[0]~4           ; 1       ;
+; codificador_ula:cod_ula_inst|selUAL[0]~0                                                         ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[31]~94                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]~93                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[30]~92                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]~91                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[29]~90                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]~89                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[28]~88                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]~87                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[27]~86                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]~85                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[26]~84                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]~83                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[25]~82                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]~81                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[24]~80                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]~79                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[23]~78                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]~77                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[22]~76                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]~75                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[21]~74                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]~73                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[20]~72                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]~71                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[19]~70                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]~69                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[18]~68                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]~67                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[17]~66                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]~65                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[16]~64                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]~63                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[15]~62                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]~61                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[14]~60                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]~59                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[13]~58                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]~57                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[12]~56                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]~55                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[11]~54                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]~53                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[10]~52                             ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]~51                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[9]~50                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]~49                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[8]~48                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]~47                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[7]~46                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]~45                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[6]~44                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]~43                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[5]~42                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]~41                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[4]~40                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]~39                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[3]~38                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]~37                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[2]~36                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]~35                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[1]~34                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]~33                              ; 1       ;
+; etapa4_pc_divisor:pc_disp_inst|clock_divider:div_inst|counter[0]~32                              ; 1       ;
++--------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -1388,158 +1385,158 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
 ; Block interconnects         ; 130 / 47,787 ( < 1 % ) ;
-; C16 interconnects           ; 6 / 1,804 ( < 1 % )    ;
-; C4 interconnects            ; 68 / 31,272 ( < 1 % )  ;
-; Direct links                ; 37 / 47,787 ( < 1 % )  ;
+; C16 interconnects           ; 4 / 1,804 ( < 1 % )    ;
+; C4 interconnects            ; 86 / 31,272 ( < 1 % )  ;
+; Direct links                ; 22 / 47,787 ( < 1 % )  ;
 ; Global clocks               ; 2 / 20 ( 10 % )        ;
-; Local interconnects         ; 82 / 15,408 ( < 1 % )  ;
-; R24 interconnects           ; 14 / 1,775 ( < 1 % )   ;
-; R4 interconnects            ; 93 / 41,310 ( < 1 % )  ;
+; Local interconnects         ; 68 / 15,408 ( < 1 % )  ;
+; R24 interconnects           ; 18 / 1,775 ( 1 % )     ;
+; R4 interconnects            ; 153 / 41,310 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Logic Elements                                                        ;
-+---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.22) ; Number of LABs  (Total = 9) ;
-+---------------------------------------------+-----------------------------+
-; 1                                           ; 1                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 0                           ;
-; 15                                          ; 1                           ;
-; 16                                          ; 6                           ;
-+---------------------------------------------+-----------------------------+
-
-
-+------------------------------------------------------------------+
-; LAB-wide Signals                                                 ;
-+------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.44) ; Number of LABs  (Total = 9) ;
-+------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 5                           ;
-; 1 Clock                            ; 5                           ;
-; 1 Clock enable                     ; 1                           ;
-; 1 Sync. clear                      ; 2                           ;
-+------------------------------------+-----------------------------+
-
-
 +----------------------------------------------------------------------------+
-; LAB Signals Sourced                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 18.00) ; Number of LABs  (Total = 9) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 1                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
-; 8                                            ; 0                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 0                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 0                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 1                           ;
-; 16                                           ; 1                           ;
-; 17                                           ; 1                           ;
-; 18                                           ; 0                           ;
-; 19                                           ; 1                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 1                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 0                           ;
-; 29                                           ; 0                           ;
-; 30                                           ; 0                           ;
-; 31                                           ; 0                           ;
-; 32                                           ; 2                           ;
-+----------------------------------------------+-----------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 11.20) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 2                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 4                            ;
++---------------------------------------------+------------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 9.33) ; Number of LABs  (Total = 9) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
-; 2                                               ; 1                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
-; 7                                               ; 2                           ;
-; 8                                               ; 0                           ;
-; 9                                               ; 1                           ;
-; 10                                              ; 1                           ;
-; 11                                              ; 0                           ;
-; 12                                              ; 0                           ;
-; 13                                              ; 0                           ;
-; 14                                              ; 0                           ;
-; 15                                              ; 0                           ;
-; 16                                              ; 3                           ;
-+-------------------------------------------------+-----------------------------+
++-------------------------------------------------------------------+
+; LAB-wide Signals                                                  ;
++------------------------------------+------------------------------+
+; LAB-wide Signals  (Average = 1.50) ; Number of LABs  (Total = 10) ;
++------------------------------------+------------------------------+
+; 1 Async. clear                     ; 5                            ;
+; 1 Clock                            ; 5                            ;
+; 1 Clock enable                     ; 2                            ;
+; 1 Sync. clear                      ; 2                            ;
+; 1 Sync. load                       ; 1                            ;
++------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 15.70) ; Number of LABs  (Total = 10) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 1                            ;
+; 15                                           ; 0                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 0                            ;
+; 32                                           ; 2                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 8.40) ; Number of LABs  (Total = 10) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 2                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 0                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 0                            ;
+; 10                                              ; 2                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 2                            ;
++-------------------------------------------------+------------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                        ;
-+----------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 10.11) ; Number of LABs  (Total = 9) ;
-+----------------------------------------------+-----------------------------+
-; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
-; 2                                            ; 0                           ;
-; 3                                            ; 1                           ;
-; 4                                            ; 3                           ;
-; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
-; 7                                            ; 0                           ;
-; 8                                            ; 1                           ;
-; 9                                            ; 0                           ;
-; 10                                           ; 0                           ;
-; 11                                           ; 2                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 0                           ;
-; 17                                           ; 0                           ;
-; 18                                           ; 0                           ;
-; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
-; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
-; 23                                           ; 0                           ;
-; 24                                           ; 0                           ;
-; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
-; 27                                           ; 0                           ;
-; 28                                           ; 0                           ;
-; 29                                           ; 0                           ;
-; 30                                           ; 0                           ;
-; 31                                           ; 0                           ;
-; 32                                           ; 0                           ;
-; 33                                           ; 1                           ;
-+----------------------------------------------+-----------------------------+
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 8.80) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 1                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 2                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 2                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 1                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 0                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 0                            ;
+; 21                                          ; 0                            ;
+; 22                                          ; 0                            ;
+; 23                                          ; 0                            ;
+; 24                                          ; 0                            ;
+; 25                                          ; 0                            ;
+; 26                                          ; 0                            ;
+; 27                                          ; 0                            ;
+; 28                                          ; 0                            ;
+; 29                                          ; 0                            ;
+; 30                                          ; 0                            ;
+; 31                                          ; 0                            ;
+; 32                                          ; 1                            ;
++---------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -1640,16 +1637,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HEX3[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX3[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX3[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[3]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; BUTTON[0]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; BUTTON[2]          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; CLOCK_50           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1740,38 +1737,38 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y20 to location X9_Y29
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y20 to location X9_Y29
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.22 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169177): 14 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone III Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at H6
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at G5
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at J7
     Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at H7
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at J7
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at G5
     Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at E3
     Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at G4
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at J6
     Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at D2
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at E4
     Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at H5
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at J6
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at H6
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at E4
     Info (169178): Pin BUTTON[0] uses I/O standard 3.3-V LVTTL at H2
     Info (169178): Pin BUTTON[2] uses I/O standard 3.3-V LVTTL at F1
     Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at G21
     Info (169178): Pin BUTTON[1] uses I/O standard 3.3-V LVTTL at G3
 Info (144001): Generated suppressed messages file D:/Projeto Final/output_files/ProjetoFinal.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4897 megabytes
-    Info: Processing ended: Fri Oct 16 08:56:45 2026
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 4884 megabytes
+    Info: Processing ended: Fri Oct 16 09:44:13 2026
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +----------------------------+
