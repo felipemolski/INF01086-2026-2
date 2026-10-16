@@ -56,6 +56,8 @@ set_global_assignment -name VERILOG_FILE pc_neander.v
 set_global_assignment -name VERILOG_FILE etapa4_pc_divisor.v
 set_global_assignment -name VERILOG_FILE ProjetoFinal.v
 set_global_assignment -name VHDL_FILE ROM_teste.vhd
+set_global_assignment -name SDC_FILE ProjetoFinal.sdc
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_G21 -to CLOCK_50
 set_location_assignment PIN_H2 -to BUTTON[0]
 set_location_assignment PIN_G3 -to BUTTON[1]
@@ -108,6 +110,11 @@ set_location_assignment PIN_B19 -to HEX3[3]
 set_location_assignment PIN_C19 -to HEX3[4]
 set_location_assignment PIN_D19 -to HEX3[5]
 set_location_assignment PIN_G15 -to HEX3[6]
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to LEDG*
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to HEX0*
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to HEX1*
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to HEX2*
+set_instance_assignment -name CURRENT_STRENGTH_NEW 8MA -to HEX3*
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
